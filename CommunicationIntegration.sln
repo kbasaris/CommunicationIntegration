@@ -9,12 +9,55 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{49
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelperLib", "HelperLib", "{B5D03C16-5BA0-4F29-9D78-8A5C8C3F8118}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceInterface", "ServiceInterface", "{785EAED2-DCF9-42BC-9C43-D884B196E273}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceInterfaces", "ServiceInterfaces", "{785EAED2-DCF9-42BC-9C43-D884B196E273}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{4D041AC5-1F96-41ED-9A85-112B4575EF59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQOrderEntryServiceInterface", "HQOrderEntryServiceInterface\HQOrderEntryServiceInterface.csproj", "{D1D46719-5C15-4D0F-86BD-41983AD4E9AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLib", "HelperLib\HelperLib.csproj", "{6105F626-1B44-4698-B1E1-8AF5039953E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQOrderEntryImplementation", "HQOrderEntryImplementation\HQOrderEntryImplementation.csproj", "{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQOrderEntryServiceHost", "HQOrderEntryServiceHost\HQOrderEntryServiceHost.csproj", "{5AFC0056-2AC2-47AB-9798-174DEA885E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderEntryApplication", "OrderEntryApplication\OrderEntryApplication.csproj", "{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1D46719-5C15-4D0F-86BD-41983AD4E9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D46719-5C15-4D0F-86BD-41983AD4E9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D46719-5C15-4D0F-86BD-41983AD4E9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D46719-5C15-4D0F-86BD-41983AD4E9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6105F626-1B44-4698-B1E1-8AF5039953E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6105F626-1B44-4698-B1E1-8AF5039953E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6105F626-1B44-4698-B1E1-8AF5039953E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6105F626-1B44-4698-B1E1-8AF5039953E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFC0056-2AC2-47AB-9798-174DEA885E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFC0056-2AC2-47AB-9798-174DEA885E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFC0056-2AC2-47AB-9798-174DEA885E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFC0056-2AC2-47AB-9798-174DEA885E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1D46719-5C15-4D0F-86BD-41983AD4E9AD} = {785EAED2-DCF9-42BC-9C43-D884B196E273}
+		{6105F626-1B44-4698-B1E1-8AF5039953E4} = {B5D03C16-5BA0-4F29-9D78-8A5C8C3F8118}
+		{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E} = {493181A1-A42A-4887-94A7-0626FC91EC99}
+		{5AFC0056-2AC2-47AB-9798-174DEA885E72} = {493181A1-A42A-4887-94A7-0626FC91EC99}
+		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3} = {4D041AC5-1F96-41ED-9A85-112B4575EF59}
 	EndGlobalSection
 EndGlobal
