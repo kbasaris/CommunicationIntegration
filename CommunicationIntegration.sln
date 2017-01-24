@@ -18,10 +18,36 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLib", "HelperLib\HelperLib.csproj", "{6105F626-1B44-4698-B1E1-8AF5039953E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQOrderEntryImplementation", "HQOrderEntryImplementation\HQOrderEntryImplementation.csproj", "{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C2F17E3-079F-4D33-9ADF-830C4B0D63D1} = {2C2F17E3-079F-4D33-9ADF-830C4B0D63D1}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQOrderEntryServiceHost", "HQOrderEntryServiceHost\HQOrderEntryServiceHost.csproj", "{5AFC0056-2AC2-47AB-9798-174DEA885E72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderEntryApplication", "OrderEntryApplication\OrderEntryApplication.csproj", "{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalOrderEntryInterface", "LocalOrderEntryInterface\LocalOrderEntryInterface.csproj", "{C11360E5-1DE5-4CFE-8843-517E87845A68}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HQProductServiceASMX", "..\HQProductServiceASMX\", "{2C2F17E3-079F-4D33-9ADF-830C4B0D63D1}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4931"
+		Debug.AspNetCompiler.PhysicalPath = "..\HQProductServiceASMX\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4931\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4931"
+		Release.AspNetCompiler.PhysicalPath = "..\HQProductServiceASMX\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4931\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4931"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +75,14 @@ Global
 		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11360E5-1DE5-4CFE-8843-517E87845A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11360E5-1DE5-4CFE-8843-517E87845A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11360E5-1DE5-4CFE-8843-517E87845A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11360E5-1DE5-4CFE-8843-517E87845A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C2F17E3-079F-4D33-9ADF-830C4B0D63D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2F17E3-079F-4D33-9ADF-830C4B0D63D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2F17E3-079F-4D33-9ADF-830C4B0D63D1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2F17E3-079F-4D33-9ADF-830C4B0D63D1}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,5 +93,7 @@ Global
 		{99F3F8EE-BE5F-45A8-8557-463F2FF9DB3E} = {493181A1-A42A-4887-94A7-0626FC91EC99}
 		{5AFC0056-2AC2-47AB-9798-174DEA885E72} = {493181A1-A42A-4887-94A7-0626FC91EC99}
 		{2D49BA96-D66A-4370-9C13-35CB5F6BD4B3} = {4D041AC5-1F96-41ED-9A85-112B4575EF59}
+		{C11360E5-1DE5-4CFE-8843-517E87845A68} = {785EAED2-DCF9-42BC-9C43-D884B196E273}
+		{2C2F17E3-079F-4D33-9ADF-830C4B0D63D1} = {493181A1-A42A-4887-94A7-0626FC91EC99}
 	EndGlobalSection
 EndGlobal
